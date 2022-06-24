@@ -1,0 +1,61 @@
+<script>
+    const simpleNum = (num) => {
+        for (let i = 2; i < num; i++) {
+            if (num % i === 0) return false;
+        }
+        return true;
+    };
+    const simpleArray = (num) => {
+        const arr = [];
+        let i = 2;
+        while (i <= num) {
+            if (simpleNum(i)) {
+                arr.push(i);
+            }
+            i++;
+        }
+        return arr;
+    };
+    console.log(simpleArray(100));
+
+
+
+    var basket = [{
+            title: "Товар 1",
+            price: 400,
+            count: 2
+        },
+        {
+            title: "Товар 2",
+            price: 500,
+            count: 1
+        },
+        {
+            title: "Товар 3",
+            price: 900,
+            count: 3
+        }
+    ];
+    var s = 0;
+
+    for (var item of basket) {
+        s += item.count * item.price;
+        document.write(item.title + " стоит " + item.price + " количество " + item.count + "<br>");
+    }
+
+    alert("Стоимость всех товаров " + s);
+
+
+
+
+
+
+
+    for (i = 0; i <= 9; console.log(i++)) {}
+    let str = '';
+    for (let i = 0; i < 20; i++) {
+        str += 'x';
+        document.write(str + '<br>');
+    }
+
+</script>

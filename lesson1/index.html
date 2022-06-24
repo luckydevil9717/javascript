@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li><span>Чему будет равно JS-выражение 1000 + "108"?</span>
+            <p>Ответ: 1000108</p>
+        </li>
+        <li><span>Самостоятельно разобраться с атрибутами тега script (async и defer)</span>
+            <p>Специальные атрибуты async и defer используются для того, чтобы пока грузится внешний скрипт – браузер показал остальную (следующую за ним) часть страницы. Без них этого не происходит.</p>
+            <p>Разница между async и defer: атрибут defer сохраняет относительную последовательность скриптов, а async – нет. Кроме того, defer всегда ждёт, пока весь HTML-документ будет готов, а async – нет.</p>
+        </li>
+    </ul>
+
+
+
+
+    <script>
+        var tGradus = prompt('Введите температуру в градусах по Цельсию', '');
+        var tFar = (9 / 5) * tGradus + 32;
+        alert(tFar);
+
+        var name = 'Василий';
+        var admin = name;
+        alert(admin);
+
+
+        var a = 1000;
+        var b = "108"
+        alert(с = a + b);
+
+
+        var a = 3;
+        var b = 4;
+        a = a + b;
+        b = a - b;
+        a = a - b;
+        alert(a);
+        alert(b);
+
+    </script>
+</body>
+
+</html>
